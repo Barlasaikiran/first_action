@@ -1,0 +1,19 @@
+name: push_workflow
+on:
+    push:
+        branches:
+            - main
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: print greetings
+              run: echo "Hello World"
+            - name: print Good boy
+              run: |
+                echo "This is my first github action"
+                echo "executed succesfully"
+
+
+
+
